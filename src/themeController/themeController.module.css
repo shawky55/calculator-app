@@ -1,0 +1,23 @@
+.themeController {
+  display: grid;
+  grid-template-columns: repeat(3, 1rem);
+  grid-template-rows: repeat(2, 1rem);
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.activeTheme {
+  background-color: orangered;
+  padding-bottom: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.themeButtons {
+  grid-column: 1/-1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+

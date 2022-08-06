@@ -1,0 +1,34 @@
+.theme-two-main-background {
+  background-color: hsl(0, 0%, 90%);
+}
+.theme-two-keys-background {
+  background-color: hsl(0, 5%, 81%);
+}
+.theme-two-output-colors {
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+.theme-two--header-colors {
+  color: hsl(60, 10%, 19%);
+}
+.theme-two-equl-btn {
+  color: #ffffff;
+  background-color: hsl(25, 98%, 40%);
+  font-size: 1.3rem;
+  border-bottom: hsl(25, 99%, 27%) 3px solid;
+}
+.theme-two-numeric-btn {
+  background-color: hsl(45, 7%, 89%);
+  color: hsl(60, 10%, 19%);
+  border-bottom: 3px solid hsl(28, 16%, 65%);
+}
+.theme-two-del-btn {
+  color: white;
+  background-color: hsl(185, 42%, 37%);
+  border-bottom: hsl(185, 58%, 25%) 3px solid;
+}
+.theme-two-reset-btn {
+  color:white;
+  background-color: hsl(185, 42%, 37%);
+  border-bottom: hsl(185, 58%, 25%) 3px solid;
+}
