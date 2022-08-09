@@ -53,7 +53,7 @@ function App() {
             ...state,
             previousOperation: state.currentOperation,
             operation: `${payload.operation}`,
-            currentOperation: null,
+            currentOperation: '',
           };
         }
         if (!state.currentOperation) {
@@ -66,7 +66,7 @@ function App() {
           ...state,
           previousOperation: evaluate(state),
           operation: payload.operation,
-          currentOperation: null,
+          currentOperation: '',
         };
       case calcAction.CLEAR:
         return initialState;
