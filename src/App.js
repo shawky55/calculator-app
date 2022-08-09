@@ -2,8 +2,8 @@ import { useEffect, useReducer, useState } from 'react';
 import './theme/theme-one.css';
 import './theme/theme-two.css';
 import './theme/theme-three.css';
-import DigitButton from './DigitButton';
-import OperationButton from './OperationButton';
+import DigitButton from './Buttons/DigitButton';
+import OperationButton from './Buttons/OperationButton';
 import './App.css';
 import ThemeController from './themeController/ThemeController';
 const initialState = {

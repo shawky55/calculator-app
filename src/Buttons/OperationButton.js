@@ -1,5 +1,5 @@
-import './App.css';
-import { calcAction } from './App';
+import './Buttons/Buttons.css';
+import { calcAction } from '../App';
 const OperationButton = ({ operation, theme, dispatch }) => {
   return (
     <button

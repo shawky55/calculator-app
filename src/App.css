@@ -4,7 +4,7 @@
   padding: 0px 1rem;
 }
 
-.calc-buttons {
+/* .calc-buttons {
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 5rem));
   grid-template-rows: repeat(5, 3rem);
@@ -12,15 +12,14 @@
   gap: 1.3rem;
   padding: 1.25rem;
   border-radius: 10px;
-}
-button {
+} */
+/* button {
   font-weight: 700;
   border-radius: 5px;
   outline: 0;
   border: 0;
 
-  /* transition: all 0.25s; */
-}
+} */
 
 .calculator--output {
   min-height: 6rem;
@@ -37,10 +36,10 @@ button {
 .previous-output {
   font-size: 1.2rem;
 }
-
+/* 
 .spanTwo {
   grid-column: span 2;
-}
+} */
 
 .calculator--header {
   display: flex;
@@ -63,7 +62,7 @@ button {
   font-size: 12px;
 }
 
-.numeric-btn {
+/* .numeric-btn {
   font-size: 1.8rem;
 }
 
@@ -76,7 +75,7 @@ button {
 
 button:hover {
   border: none;
-}
+} */
 /* ///////////////////////////// */
 
 @media (max-width: 500px) {
@@ -85,6 +84,6 @@ button:hover {
   }
 }
 
-.lastrowButton {
+/* .lastrowButton {
   font-size: 1.3rem;
-}
+} */

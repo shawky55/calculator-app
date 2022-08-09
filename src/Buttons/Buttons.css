@@ -1,0 +1,37 @@
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 5rem));
+  grid-template-rows: repeat(5, 3rem);
+  grid-gap: 1.3rem;
+  gap: 1.3rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+}
+button {
+  font-weight: 700;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+
+}
+
+.spanTwo {
+  grid-column: span 2;
+}
+.numeric-btn {
+  font-size: 1.8rem;
+}
+
+.del-btn {
+  font-size: 1rem;
+}
+.reset-btn {
+  font-size: 1rem;
+}
+
+button:hover {
+  border: none;
+}
+.lastrowButton {
+  font-size: 1.3rem;
+}
