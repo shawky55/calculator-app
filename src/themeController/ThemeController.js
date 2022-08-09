@@ -18,7 +18,7 @@ const ThemeController = ({ setTheme, theme }) => {
               className={classes.themeButton}
               name="themeButtons"
               onChange={(event) => handleClick(event)}
-              defaultChecked
+              defaultChecked={theme == 'one'}
             />
             <label htmlFor="one">1</label>
           </div>
@@ -29,6 +29,7 @@ const ThemeController = ({ setTheme, theme }) => {
               className={classes.themeButton}
               name="themeButtons"
               onChange={(event) => handleClick(event)}
+              defaultChecked={theme == 'two'}
             />
             <label htmlFor="two">2</label>
           </div>
@@ -39,6 +40,7 @@ const ThemeController = ({ setTheme, theme }) => {
               className={classes.themeButton}
               name="themeButtons"
               onChange={(event) => handleClick(event)}
+              defaultChecked={theme == 'three'}
             />
             <label htmlFor="three">3</label>
           </div>

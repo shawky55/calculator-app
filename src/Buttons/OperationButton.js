@@ -1,4 +1,4 @@
-import './Buttons/Buttons.css';
+import './Buttons.css';
 import { calcAction } from '../App';
 const OperationButton = ({ operation, theme, dispatch }) => {
   return (

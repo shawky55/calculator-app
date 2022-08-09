@@ -13,12 +13,12 @@
 }
 .theme-two-equl-btn {
   color: #ffffff;
-  background-color: hsl(25, 98%, 40%);
+  background-color: #ca5502;
   font-size: 1.3rem;
   border-bottom: hsl(25, 99%, 27%) 3px solid;
 }
 .theme-two-numeric-btn {
-  background-color: hsl(45, 7%, 89%);
+  background-color: #e5e4e1;
   color: hsl(60, 10%, 19%);
   border-bottom: 3px solid hsl(28, 16%, 65%);
 }
@@ -28,7 +28,20 @@
   border-bottom: hsl(185, 58%, 25%) 3px solid;
 }
 .theme-two-reset-btn {
-  color:white;
-  background-color: hsl(185, 42%, 37%);
+  color: white;
+  background-color: #377f86;
   border-bottom: hsl(185, 58%, 25%) 3px solid;
+}
+
+
+.theme-two-equl-btn:hover {
+  background-color: #df9967;
+  
+}
+.theme-two-del-btn:hover {
+  background-color: #87b2b6;
+}
+
+.theme-two-reset-btn:hover {
+  background-color: #87b2b6;
 }

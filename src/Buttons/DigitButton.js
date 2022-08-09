@@ -1,5 +1,5 @@
 import { calcAction } from '../App';
-import './Buttons/Buttons.css';
+import './Buttons.css';
 
 const DigitButton = ({ digit, dispatch, theme }) => {
   return (
