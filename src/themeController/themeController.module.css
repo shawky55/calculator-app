@@ -6,18 +6,47 @@
   align-items: center;
   justify-content: center;
   margin-left: 10px;
+  padding: 0 0 0 1rem;
+  position: relative;
 }
-.activeTheme {
-  background-color: orangered;
-  padding-bottom: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-}
+
 
 .themeButtons {
   grid-column: 1/-1;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  border: none;
 }
 
+label {
+  text-align: center;
+  position: relative;
+}
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + label::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  border-radius: 50%;
+background-color: orangered;
+  transform: translate(-50%, 50%);
+}
+
+.wrapper {
+  position: absolute;
+  content: '';
+  width: 5rem;
+  height: 1.5rem;
+  left: 4px;
+  top: 18px;
+  opacity: 0.5;
+  border-radius: 19px;
+  z-index: -1;
+}

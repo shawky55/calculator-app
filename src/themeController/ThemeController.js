@@ -1,50 +1,52 @@
 // @flow
-import { useState } from 'react';
+import { useEffect } from 'react';
+import './themeControllerColor.css';
 import classes from './themeController.module.css';
-const ThemeController = ({ setTheme, color }) => {
-  //   const [active, setActive] = useState('1');
-
-  const handleClick = (id) => {
-    setTheme(id);
-    // setActive(id);
-    console.log(id);
+const ThemeController = ({ setTheme, theme }) => {
+  const handleClick = (event) => {
+    setTheme(event.currentTarget.id);
   };
+
   return (
     <div className={classes.themeController}>
-      <div className="theme-number">1</div>
-      <div className="theme-number">2</div>
-      <div className="theme-number">3</div>
       <div className={classes.themeButtons}>
         <fieldset id="themeButtons" className={classes.themeButtons}>
-          <input
-            id={'one'}
-            type="radio"
-            className={classes.themeButton}
-            name="themeButtons"
-            onChange={(event) => handleClick(event.currentTarget.id)}
-          />
-          <input
-            id={'two'}
-            type="radio"
-            className={classes.themeButton}
-            name="themeButtons"
-            onChange={(event) => handleClick(event.currentTarget.id)}
-          />
-          <input
-            id={'three'}
-            type="radio"
-            className={classes.themeButton}
-            name="themeButtons"
-            onChange={(event) => handleClick(event.currentTarget.id)}
-          />
+          <div>
+            <input
+              id={'one'}
+              type="radio"
+              className={classes.themeButton}
+              name="themeButtons"
+              onChange={(event) => handleClick(event)}
+              defaultChecked
+            />
+            <label htmlFor="one">1</label>
+          </div>
+          <div>
+            <input
+              id={'two'}
+              type="radio"
+              className={classes.themeButton}
+              name="themeButtons"
+              onChange={(event) => handleClick(event)}
+            />
+            <label htmlFor="two">2</label>
+          </div>
+          <div>
+            <input
+              id={'three'}
+              type="radio"
+              className={classes.themeButton}
+              name="themeButtons"
+              onChange={(event) => handleClick(event)}
+            />
+            <label htmlFor="three">3</label>
+          </div>
+
+          <div className={`${classes.wrapper} ${theme} `}></div>
         </fieldset>
       </div>
     </div>
   );
-
-  //   <div className={active === '3' ? classes.activeTheme : null}>
-  //     3
-  //   </div>;
-  //
 };
 export default ThemeController;

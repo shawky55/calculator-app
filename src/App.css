@@ -1,14 +1,15 @@
 .calculator {
   display: flex;
   flex-direction: column;
+  padding: 0px 1rem;
 }
 
 .calc-buttons {
   display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 4.5rem));
-  grid-template-rows: repeat(5, 2.75rem);
-  grid-gap: 1rem;
-  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(auto, 5rem));
+  grid-template-rows: repeat(5, 3rem);
+  grid-gap: 1.3rem;
+  gap: 1.3rem;
   padding: 1.25rem;
   border-radius: 10px;
 }
@@ -17,6 +18,8 @@ button {
   border-radius: 5px;
   outline: 0;
   border: 0;
+
+  /* transition: all 0.25s; */
 }
 
 .calculator--output {
@@ -44,6 +47,8 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
+  margin-bottom: 1rem;
+  gap:1.5rem
 }
 .theme-controller {
   display: flex;
@@ -51,7 +56,7 @@ button {
 }
 
 .calculator--header .calculator--logo {
-  font-size: 1.75rem;
+  font-size: 2rem;
   flex-basis: 75%;
 }
 .calculator--header .theme {
@@ -59,7 +64,7 @@ button {
 }
 
 .numeric-btn {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .del-btn {
@@ -69,10 +74,17 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  border: none;
+}
 /* ///////////////////////////// */
 
 @media (max-width: 500px) {
   html {
-    font-size:80%;
+    font-size: 85%;
   }
+}
+
+.lastrowButton {
+  font-size: 1.3rem;
 }
