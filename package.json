@@ -1,7 +1,7 @@
 {
   "name": "react-lap",
   "version": "0.1.0",
-  "homepage": "https://shawky55.githyb.io/calculator-app",
+  "homepage": "https://shawky55.github.io/calculator-app",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",

@@ -27,10 +27,10 @@ function App() {
   const calcReducer = (state, { type, payload }) => {
     switch (type) {
       case calcAction.ADD_DIGIT:
-        if (payload.digit == '.' && state.currentOperation.includes('.')) {
+        if (payload.digit === '.' && state.currentOperation.includes('.')) {
           return state;
         }
-        if (payload.digit == '0' && state.currentOperation === '0') {
+        if (payload.digit === '0' && state.currentOperation === '0') {
           return state;
         }
         if (state.overwrite) {
@@ -96,7 +96,7 @@ function App() {
           };
         }
         if (!state.currentOperation) return state;
-        if (state.currentOperation == 1) {
+        if (state.currentOperation === 1) {
           return {
             ...state,
             currentOperation: '',
@@ -106,6 +106,7 @@ function App() {
           ...state,
           currentOperation: state.currentOperation.slice(0, -1),
         };
+      default:
     }
   };
   const evaluate = ({ previousOperation, operation, currentOperation }) => {
@@ -130,6 +131,7 @@ function App() {
           result = previous / current;
         }
         break;
+      default:
     }
 
     return result.toString();

@@ -1,5 +1,4 @@
 // @flow
-import { useEffect } from 'react';
 import './themeControllerColor.css';
 import classes from './themeController.module.css';
 const ThemeController = ({ setTheme, theme }) => {
